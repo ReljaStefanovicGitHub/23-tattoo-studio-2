@@ -139,3 +139,11 @@ input[type=submit]:hover {
   background-color: black;
   padding: 20px;
 }
+#home{
+  background-image: url(https://live.staticflickr.com/65535/53743973920_8f7ebe2529.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  height: calc(background-image);
+  position: relative;
+}
