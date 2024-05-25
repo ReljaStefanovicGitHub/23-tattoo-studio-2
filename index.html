@@ -9,102 +9,6 @@
 <link rel="stylesheet" href="/css/style.css">
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript" src="email.js"></script>
-<style>
-.foreground-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.foreground-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px; /* Reduced space between image and line */
-}
-
-.paragraphs-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center; /* Center text within the paragraphs */
-  margin-top: -300px;
-}
-
-.paragraphs-container p {
-  width: 40%; /* Adjust width as needed */
-  font-size: 17px;
-  margin-top: -400px;
-  margin: 0; /* Remove default margin */
-}
-
-.paragraphs-container .line {
-  width: 2px; /* Adjust the thickness as needed */
-  height: 100px; /* Adjust the height as needed */
-  background-color: white; /* Adjust the color as needed */;
-}
-
-.paragraphs-container .line-br {
-  display: none; /* Hide the horizontal line by default */
-  width: 50px; /* Adjust the width as needed */
-  height: 2px; /* Adjust the thickness as needed */
-  background-color: white; /* Adjust the color as needed */
-  margin: 10px 0; /* Reduce space between paragraphs and the line */
-}
-
-@media screen and (max-width: 760px) {
-  .paragraphs-container {
-    flex-direction: column;
-  }
-  .foreground-image img {
-    display: block;
-    height: auto;
-    margin-bottom: 20px;
-}
-  .paragraphs-container p {
-    width: 100%; 
-    margin: 0; 
-    font-size: 15px;
-    margin-top: 200px;
-  }
-
-  .paragraphs-container .line {
-    display: none; 
-  }
-
-  .paragraphs-container .line-br {
-    display: block; 
-    margin-top: 20px;
-    margin-bottom: -170px;
-  }
-  #home {
-    background-size: cover;
-    background-position: top center; /* Adjust the position to better fit small screens */
-  }
-  .foreground-image img {
-    width: 200%; /* Increase the width for small screens */
-    max-width: none; /* Ensure max-width does not constrain the image */
-  }
-}
-
-#home {
-  background-image: url(https://live.staticflickr.com/65535/53743973920_8f7ebe2529.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-</style>
 <script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="w3-black" style="margin: 0; padding: 0;">
@@ -112,11 +16,12 @@
 <div id="main">
   <header id="home">
     <div class="w3-top w3-center" id="myNavbar" style="position: absolute; text-decoration: none; font-family: sans-serif;">
-      <div class="w3-bar w3-center" style="text-decoration: none; font-family: sans-serif;">
-        <a href="#main" class="w3-bar-item" style="width:25%; background-color: transparent;">POČETNA</a>
-        <a href="#about" class="w3-bar-item" style="width:25%;">O MENI</a>
-        <a href="gallery.html" class="w3-bar-item" style="width:25%;">GALERIJA</a>
-        <a href="#contact" class="w3-bar-item" style="width:25%;">KONTAKT</a>
+      <div class="w3-bar w3-center myNav" style="padding-top: 20px;">
+        <a href="#main" class="w3-bar-item" style="width:20%; background-color: transparent;">POČETNA</a>
+        <a href="#about" class="w3-bar-item" style="width:20%;">O MENI</a>
+        <a href="gallery.html" class="w3-bar-item" style="width:20%;">GALERIJA</a>
+        <a href="gallery.html" class="w3-bar-item" style="width:20%;">Q&A</a>
+        <a href="#contact" class="w3-bar-item" style="width:20%;">KONTAKT</a>
       </div>
     </div>
     <div class="foreground-image">
@@ -131,15 +36,18 @@
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Marko Trivunić</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64 w3-margin-rights" id="about">
+    <h2 class="w3-text-light-grey about-div" >Marko Trivunić</h2>
+    <hr style="width:200px" class="w3-opacity about-div">
+    <p class="about-div">
+      23 Tattoo Studio počeo je sa radom
+      23.3.2021. godine u Novom Sadu.
+      Studio je osnovan sa verovanjem da će ga baš taj datum otvaranja probiti na tattoo nebo, a još kada je i naziv studija upravo taj broj, rekli bismo da je to dobitna kombinacija.
+      Stilovi kojim smo najviše posvećeni
+      jesu MICROREALISM i FINE-LINE.
     </p>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey about-div">
       <div class="w3-half w3-section">
         <span class="w3-xlarge">1000+</span><br>
         Uradjenih tetovaža
@@ -159,7 +67,7 @@
     <div class="w3-section" style="padding: 1px 20px;">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Novi Sad, Srbija</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefon: <a href="tel:0604474695">0604474695</a></p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:rdmdtrasportdoo@gmail.com">rdmdtrasportdoo@gmail.com</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: 23tattoostudio23@gmail.com</a></p>
     </div><br>
     <div class="container" style="background-color: rgb(34, 34, 34)">
       <input type="email" id="email" placeholder="Your email" required>
