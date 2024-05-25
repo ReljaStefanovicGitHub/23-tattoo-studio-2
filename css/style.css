@@ -71,3 +71,107 @@ input[type=submit]:hover {
   background-color: black;
   padding: 20px;
 }
+.foreground-image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foreground-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Reduced space between image and line */
+}
+
+.paragraphs-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; /* Center text within the paragraphs */
+  margin-top: -300px;
+}
+
+.paragraphs-container p {
+  width: 40%; /* Adjust width as needed */
+  font-size: 17px;
+  margin-top: -400px;
+  margin: 0; /* Remove default margin */
+}
+
+.paragraphs-container .line {
+  width: 2px; /* Adjust the thickness as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: white; /* Adjust the color as needed */;
+}
+
+.paragraphs-container .line-br {
+  display: none; /* Hide the horizontal line by default */
+  width: 50px; /* Adjust the width as needed */
+  height: 2px; /* Adjust the thickness as needed */
+  background-color: white; /* Adjust the color as needed */
+  margin: 10px 0; /* Reduce space between paragraphs and the line */
+}
+
+@media screen and (max-width: 760px) {
+  .paragraphs-container {
+    flex-direction: column;
+  }
+  .foreground-image img {
+    display: block;
+    height: auto;
+    margin-bottom: -20px;
+}
+  .paragraphs-container p {
+    width: 100%; 
+    margin: 0; 
+    font-size: 15px;
+    margin-top: 200px;
+  }
+
+  .paragraphs-container .line {
+    display: none; 
+  }
+
+  .paragraphs-container .line-br {
+    display: block; 
+    margin-top: 20px;
+    margin-bottom: -170px;
+    width: 200px;
+  }
+  #home {
+    background-size: cover;
+    background-position: top center; /* Adjust the position to better fit small screens */
+  }
+  .foreground-image img {
+    width: 200%; /* Increase the width for small screens */
+    max-width: none; /* Ensure max-width does not constrain the image */
+  }
+  .about-div{
+    margin: 10px;
+  }
+  .w3-bar-item{
+    
+  }
+}
+
+#home {
+  background-image: url(https://live.staticflickr.com/65535/53743973920_8f7ebe2529.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-div{
+  margin: 10px;
+}
