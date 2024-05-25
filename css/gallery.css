@@ -32,15 +32,30 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .filter-button button{
     cursor: pointer;
     display: inline-block; 
-    margin-top: 10px;
+    margin-top: 50px;
     color: black;
     text-decoration: none;
     background-color: white;
     border-radius: 20px;
     text-align: right;
     margin-bottom: 20px;
+    opacity: 0;
+    cursor: default;
 }
 
-#myNavbar{
-    align-items: c;
+.w3-main{
+    margin-left: 20px;
+}
+.gallery-content{
+    position: relative;
+}
+.gallery-content .back .back-h1, .back a{
+    display: inline-block;
+    margin-top: 30px;
+    position: absolute;
+}
+.gallery-content .back .back-h1{
+    margin-left: 30px;
+    margin-top: 0;
+    padding: 0;
 }
