@@ -84,9 +84,10 @@ input[type=submit]:hover {
 
 .foreground-image img {
   display: block;
-  max-width: 100%;
+  top: 45%;
+  max-width: 120%;
   height: auto;
-  margin-bottom: 10px; /* Reduced space between image and line */
+  margin-bottom: -40px; /* Reduced space between image and line */
 }
 
 .paragraphs-container {
@@ -100,15 +101,28 @@ input[type=submit]:hover {
 
 .paragraphs-container p {
   width: 40%; /* Adjust width as needed */
-  font-size: 17px;
   margin-top: -400px;
-  margin: 0; /* Remove default margin */
+  margin: 0; 
+}
+.paragraphs-container .p1 {
+  width: 40%; /* Adjust width as needed */
+  font-size: 15px;
+  margin: 0; 
+  margin-right: -120px; 
+}
+.paragraphs-container .p2 {
+  width: 40%; /* Adjust width as needed */
+  font-size: 15px;
+  margin: 0; 
+  margin-left: -120px;
 }
 
 .paragraphs-container .line {
   width: 2px; /* Adjust the thickness as needed */
-  height: 100px; /* Adjust the height as needed */
+  height: 70px; /* Adjust the height as needed */
   background-color: white; /* Adjust the color as needed */;
+  margin: 0;
+  padding: 0;
 }
 
 .paragraphs-container .line-br {
@@ -116,48 +130,89 @@ input[type=submit]:hover {
   width: 50px; /* Adjust the width as needed */
   height: 2px; /* Adjust the thickness as needed */
   background-color: white; /* Adjust the color as needed */
-  margin: 10px 0; /* Reduce space between paragraphs and the line */
+  margin: 8px ; /* Reduce space between paragraphs and the line */
 }
 
 @media screen and (max-width: 760px) {
-  .paragraphs-container {
+  .foreground-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
+  
   .foreground-image img {
     display: block;
+    top: 45%;
+    max-width: 120%;
     height: auto;
-    margin-bottom: -20px;
-}
+    margin-bottom: -40px; /* Reduced space between image and line */
+  }
+  
+  .paragraphs-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; /* Center text within the paragraphs */
+    margin-top: -300px;
+  }
+  
   .paragraphs-container p {
-    width: 100%; 
+    width: 40%; /* Adjust width as needed */
+    margin-top: -400px;
     margin: 0; 
+  }
+  .paragraphs-container .p1 {
+    width: 40%; /* Adjust width as needed */
     font-size: 15px;
-    margin-top: 200px;
+    margin: 0; 
+    margin-right: -120px; 
   }
-
+  .paragraphs-container .p2 {
+    width: 40%; /* Adjust width as needed */
+    font-size: 15px;
+    margin: 0; 
+    margin-left: -120px;
+  }
+  
   .paragraphs-container .line {
-    display: none; 
+    width: 2px; /* Adjust the thickness as needed */
+    height: 70px; /* Adjust the height as needed */
+    background-color: white; /* Adjust the color as needed */;
+    margin: 0;
+    padding: 0;
   }
-
+  
   .paragraphs-container .line-br {
-    display: block; 
-    margin-top: 20px;
-    margin-bottom: -170px;
-    width: 200px;
-  }
-  #home {
-    background-size: cover;
-    background-position: top center; /* Adjust the position to better fit small screens */
-  }
-  .foreground-image img {
-    width: 200%; /* Increase the width for small screens */
-    max-width: none; /* Ensure max-width does not constrain the image */
+    display: none; /* Hide the horizontal line by default */
+    width: 50px; /* Adjust the width as needed */
+    height: 2px; /* Adjust the thickness as needed */
+    background-color: white; /* Adjust the color as needed */
+    margin: 8px ; /* Reduce space between paragraphs and the line */
   }
   .about-div{
     margin: 10px;
   }
-  .w3-bar-item{
-    
+  .par{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .par p{
+    font-size: 10px;
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .barcode img{
+    width: 270px;
+    margin-top: 20px;
   }
 }
 
@@ -174,4 +229,20 @@ input[type=submit]:hover {
 }
 .about-div{
   margin: 10px;
+}
+.par{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.par p{
+  font-size: 10px;
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.barcode img{
+  width: 270px;
+  margin-top: 20px;
 }
