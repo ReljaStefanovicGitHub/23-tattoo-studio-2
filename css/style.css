@@ -246,3 +246,14 @@ input[type=submit]:hover {
   width: 270px;
   margin-top: 20px;
 }
+
+/* Q&A Page */
+.container-1{
+  background-image: url(https://live.staticflickr.com/65535/53745977998_ec86bf4db4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
