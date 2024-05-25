@@ -21,21 +21,18 @@
 </head>
 <body class="w3-black">
 
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-center" id="myNavbar" style="position: absolute; text-decoration: none; font-family: sans-serif;">
-  <div class="w3-bar w3-center" style="text-decoration: none; font-family: sans-serif;">
-    <a href="index.html" class="w3-bar-item" style="width:25%; background-color: transparent;">POČETNA</a>
-    <a href="index.html" class="w3-bar-item" style="width:25%;">O MENI</a>
-    <a href="index.html" class="w3-bar-item" style="width:25%;">Q&A</a>
-    <a href="index.html" class="w3-bar-item" style="width:25%;">KONTAKT</a>
-  </div>
-</div>
-
 <!-- Page Content -->
-<div class="w3-main" style="margin-left:300px; margin-top: 30px;">
+<div class="w3-main">
   <div class="filter-content">
-    <h1><b>GALERIJA</b></h1>
+    <div class="gallery-content">
+      <div class="back">
+        <a href="index.html"><i class="fa-sharp fa-solid fa-chevron-left fa-xl"></i></a>
+        <div class="back-h1">
+          <h1><b>GALERIJA</b></h1>
+        </div>
+        
+      </div>
+    </div>
     <div class="filter-button">
       <button onclick="filter('all')"><b>Sve</b></button>
       <button onclick="filter('photos')"><b>Slike</b></button>
