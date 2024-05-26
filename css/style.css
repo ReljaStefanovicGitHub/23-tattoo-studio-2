@@ -330,14 +330,32 @@ input[type=submit]:hover {
   }
 }
 
-/* Q&A Page */
-.container-1{
-  background-image: url(https://live.staticflickr.com/65535/53745977998_ec86bf4db4.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+.about-page{
+  background-image: url(/icons/about.png);
+  background-size: cover;
   height: 100vh;
+}
+.content-about{
   color: white;
   font-family: 'din alternate';
+  width: 50%;
+  float: right;
+  text-align: center;
+  height: 75%;
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-page img{
+  display: block;
+  top: 45%;
+  max-width: 50%;
+  height: auto;
+  display: inline-block;
+}
+.table{
+  background-color: white;
+  color: black;
 }
