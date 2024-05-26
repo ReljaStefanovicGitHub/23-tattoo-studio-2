@@ -323,8 +323,10 @@ input[type=submit]:hover {
     top: 125%;
     transform: translate(-50%, -50%);
   }
-  .myNav{
-    letter-spacing: -1px;
+  .myNav a{
+    letter-spacing: 0px;
+    font-weight: 400;
+    
   }
 }
 
