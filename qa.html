@@ -2,57 +2,14 @@
 <html lang="en">
 <head>
     <link href="https://fonts.cdnfonts.com/css/din-alternate" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/qa.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrow Icon Navigation</title>
-    <style>
-        body {
-            display: flex;
-            padding-left: 200px;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            left: 20%;
-        }
-        .navigation {
-            position: absolute;
-            left: 285px;
-            top: 60%;
-            transform: translateY(-50%);
-        }
-        .arrow {
-            cursor: pointer;
-            font-size: 24px;
-            margin: 0 10px;
-            -webkit-user-select: none;
-            user-select: none;
-            color: white;
-        }
-        .content {
-            display: none;
-            text-align: center;
-            max-width: 400px;
-            color: white;
-        }
-        .content.visible {
-            display: block;
-        }
-        .qa-h1{
-            position: absolute;
-            top: 16%;
-            font-family: 'din alternate';
-            font-size: 60px;
-            color: white;
-        }
-        .qa-hr{
-            color: white;
-            width: 110px;
-            position: absolute;
-            top: 30%
-        }
-    </style>
+    <title>23 Tattoo Studio</title>
 </head>
 <body style="background-image: url(https://live.staticflickr.com/65535/53745977998_ec86bf4db4.jpg); background-size: cover; background-position: center;">
+    <a href="index.html"><i class="fa-sharp fa-solid fa-chevron-left fa-xl back-arrow"></i></a>
     <div class="qa-text"> 
         <h1 class="qa-h1">Q&A</h1>
         <hr class="qa-hr">
@@ -62,48 +19,106 @@
             <span id="leftArrow" class="arrow">&#9664;</span> <!-- Left arrow icon -->
             <span id="rightArrow" class="arrow">&#9654;</span> <!-- Right arrow icon -->
         </div>
-        <div id="content1" class="content visible">
-            <h2>Heading 1</h2>
-            <p>This is the content of the first paragraph.</p>
+        <div id="content1" class="content visible" style="font-family: 'din alternate';">
+            <h2>Koja je cena tetovaze?</h2>
+            <p>Cena tetoviranja zavisi od vise faktora, od kojih su tri glavna: detaljan opis ili fotografija, dimenzije u CM, kao i mesto na telu na kom bi radili tetovazu.
+                Tek posle ovih informcija mozete dobiti cenu.</p>
         </div>
-        <div id="content2" class="content">
-            <h2>Heading 2</h2>
-            <p>This is the content of the second paragraph.</p>
+        <div id="content2" class="content" style="font-family: 'din alternate';">
+            <h2>Da li mogu da se tetoviram ako imam samo ideju?</h2>
+            <p>Ukoliko imate ideju i zamisao, a nemate fotografiju ili dizajn, mozete poslati opis tetovaze i uz konsultacije napravicemo najbolji dizajn za vas. </p>
         </div>
-        <div id="content3" class="content">
-            <h2>Heading 3</h2>
-            <p>This is the content of the third paragraph.</p>
+        <div id="content3" class="content" style="font-family: 'din alternate';"> 
+            <h2>Mogu li zakazati konsultacije pre nego sto se odlucim za tetoviranje?</h2>
+            <p>Zbog obima posla, konsultacije ne radimo sa svima vec samo sa klijentima koji rade vece i zahtevnije tetovaze, gde moramo crtati dizajn i napraviti plan. Za sve ostale, mozete se uvek javiti porukom putem instagrama za sve nedoumice i pitanja. </p>
+        </div>
+        <div id="content4" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li imate poklon vaucere za tetoviranje?</h2>
+            <p>Imamo poklon vaucere koje mozete iskoristiti kao originalan poklon za vama dragu osobu. </p>
+        </div>
+        <div id="content5" class="content" style="font-family: 'din alternate';"> 
+            <h2>Koliko unapred treba da zakazem termin za tetoviranje?</h2>
+            <p>
+                Na termin se uglavnom ceka od dve do cetiri nedelje. Medjutim, budite slobodni da pitate za termin koji vama odgovora jer nekada zna da se oslobodi termin danas za sutra i cesto se nekome posreci da dobije termin pre nego sto je mislio. Takodje, ukoliko zelite da zakazete tetovazu manjih dimenzija, koja ne zahteva mnogo posla, uglavnom dobijete termin sto je pre moguce</p>
+        </div>
+        <div id="content6" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li smem da se tetoviram ukoliko nemam 18 godina?</h2>
+            <p>U nasem studiju se mozete istetovirati od svoje 16. godine, ali samo uz prisustvo i saglasnost barem jednog roditelja ili staratelja.
+            </p>
+        </div>
+        <div id="content7" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li drzite kurseve i obuke?</h2>
+            <p>23 studio je mesto gde mozete nauciti svet tetoviranja. Odrzavamo obuke za pocetnike, koju mozete uplatiti i sa opremom koja vam je potrebna za pocetak. </p>
+        </div>
+        <div id="content8" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li je tetoviranje bolno?</h2>
+            <p>Bol prilikom tetoviranja je dosta individualna. Postoje mesta koja su osetljivija i ona koja su manje osetljiva. Medjutim, u nasem dugogodisnjem iskustvu odsustvo bola je u 99% slucajeva. </p>
+        </div>
+        <div id="content9" class="content" style="font-family: 'din alternate';"> 
+            <h2>Kako da se pripremim pre tetoviranja?</h2>
+            <p>Priprema pre tetoviranja skoro i da ne postoji. Bez alkohola 24h pre termina, obavezan obrok pre dolaska i ukoliko je leto bez izgorele koze od sunca. </p>
+        </div>
+        <div id="content10" class="content" style="font-family: 'din alternate';"> 
+            <h2>Sta treba da izbegavam nakon tetoviranja?</h2>
+            <p>Ukoliko zelite da se tetovirate, a sumnjate da ce lose uticati na vas zbog hronicnih bolesti ili sumnji na bilo kakvo oboljenje, otklanja se kod lekara i onoga ko je strucan da da  medicinsko misljenje. </p>
+        </div>
+        <div id="content22" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li smem da ye tetoviram ukoliko imam neko oboljenje?</h2>
+            <p>Ukoliko zelite da se tetovirate, a sumnjate da ce lose uticati na vas zbog hronicnih bolesti ili sumnji na bilo kakvo oboljenje, otklanja se kod lekara i onoga ko je strucan da da  medicinsko misljenje.</p>
+        </div>
+        <div id="content11" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li sunce utice na tetovazu?</h2>
+            <p>Glavni neprijatelj tetovaze jeste upravo sunce i savet je da prilikom suncanja uvek namazete zastitni faktor na vasu tetovazu.</p>
+        </div>
+        <div id="content12" class="content" style="font-family: 'din alternate';"> 
+            <h2>Koji su saveti za osobe koje se tetoviraju prvi put?</h2>
+            <p>Prvo tetoviranje cesto zna da bude propraceno strahom. Medjutim, nema razloga za to. “Bol” koja se oseti prilikom tetoviranja je cesto bol koja veoma prija, kako kazu mnogi klijenti. 
+            </p>
+        </div>
+        <div id="content13" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li imam popust ukoliko radim vise tetovaza u jednom terminu?</h2>
+            <p>Da, ukoliko radite vise tetovaza u jednom terminu uvek ce vas izaci jeftinije nego da radite sve te tetovaze u posebnim terminima.</p>
+        </div>
+        <div id="content14" class="content" style="font-family: 'din alternate';"> 
+            <h2>Kako da negujem tetovazu nakon izrade?</h2>
+            <p>Nego posle tetoviranja nije nista sto ce vam preterano tesko pasti. Na kraju vaseg termina dobicete detaljno objasnjenje kako da negujete vasu tetovazu da bi ona izgleda sto bolje.</p>
+        </div>
+        <div id="content15" class="content" style="font-family: 'din alternate';"> 
+            <h2>Koje su mere higijene i sigurnosti u studiju?</h2>
+            <p>Svaki klijent je potpuno siguran. Sve sto dolazi u kontakt sa klijentom tokom tetoviranja je besprekorno cisto, dezinfikovano i sterilno. </p>
+        </div>
+        <div id="content16" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li je moguca infekcija?</h2>
+            <p>Tetovaza je rana koju treba negovati i drzati je cistom tokom zarastanja. Kada primite upustva o negovanju tetovaze potrebno je pridrzavati ih se i time cete dobijanje infekcije svesti na 0.</p>
+        </div>
+        <div id="content17" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li je bezbedno tetovirati se u trudnoci?</h2>
+            <p>U nasem studiju ne tetoviramo trudnice iako cesto dobiju odobrenje od lekara. </p>
+        </div>
+        <div id="content18" class="content" style="font-family: 'din alternate';"> 
+            <h2>Kako se mogu odluciti izmedju razlicitih velicina tetovaze?</h2>
+            <p>Kada dodjete na vas termin, uvek cete dobiti odstampan dizajn u par razlicitih dimenzija gde cemo odabrati velicinu koja vam najvise odgovara.</p>
+        </div>
+        <div id="content19" class="content" style="font-family: 'din alternate';"> 
+            <h2>Da li radite tetovaze na prstima i sakama?</h2>
+            <p>Radimo, ali je potrebno znati pre zakazivanja koje su moguce posledice. Tetoviranje na takvim mestima uglavnom zahtevaju barem jednu korekciju. Koza sake i prstiju je drugacija i uglavnom na nakim delovima ispadne pigment.</p>
+        </div>
+        <div id="content20" class="content" style="font-family: 'din alternate';"> 
+            <h2>Koji stil je najvise trazen u vasem studiju?</h2>
+            <p>Najtrazeniji stil kod nas jeste Fine- line, kao i microrealism. Stilovi za koje vazi da su dosta teski za izradu su stilovi za koje smo stekli veliko poverenje kod klijenata. </p>
+        </div>
+        <div id="content21" class="content" style="font-family: 'din alternate';"> 
+            <h2>Kako da budem siguran da li sam talentovan za posao Tattoo Artista?</h2>
+            <p>
+                U ovom poslu je najbitnije strpljenje, volja i proces. Ukoliko posedujes ljubav prema tetoviranju i mozes sebe da vidis na mestu Tattoo Artista dovoljno je da udjes u taj svet.</p>
+        </div>
+        <div id="content23" class="content" style="font-family: 'din alternate';"> 
+            <h2>Koja je simbolika broja 23?</h2>
+            <p>Vera u broj 23 je verovanje zasto smo bas tu gde jesmo. Sreca, uspeh i zadovoljstvo.</p>
         </div>
     </div>
 
-    <script>
-        // Get all content divs and arrows
-        const contents = document.querySelectorAll('.content');
-        const leftArrow = document.getElementById('leftArrow');
-        const rightArrow = document.getElementById('rightArrow');
-        let currentIndex = 0;
-
-        // Function to update visibility of content
-        const updateVisibility = () => {
-            contents.forEach((content, index) => {
-                content.classList.toggle('visible', index === currentIndex);
-            });
-        };
-
-        // Add event listener for left arrow click
-        leftArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
-            updateVisibility();
-        });
-
-        // Add event listener for right arrow click
-        rightArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % contents.length;
-            updateVisibility();
-        });
-
-        // Initial display setup
-        updateVisibility();
+    <script src="qa.js">
     </script>
 </body>
 </html>
