@@ -355,7 +355,35 @@ input[type=submit]:hover {
   height: auto;
   display: inline-block;
 }
-.table{
-  background-color: white;
-  color: black;
+.content-about p{
+  padding: 10px;
+}
+@media screen and (max-width: 760px){
+  .about-page{
+    background-image: url(/icons/about.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  .content-about{
+    color: white;
+    font-family: 'din alternate';
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-page img{
+    display: block;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    position: absolute
+  }
+  .content-about p{
+    padding: 10px;
+  }
 }
