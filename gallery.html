@@ -6,17 +6,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css">
 <link rel="stylesheet" href="/css/gallery.css">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css">
 <style>
+          .gallery {
+            column-count: 4; /* Number of columns */
+            column-gap: 10px; /* Gap between columns */
+        }
 
+        .gallery a {
+            break-inside: avoid;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .gallery img, .gallery iframe {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Media query for mobile view */
+        @media (max-width: 600px) {
+            .gallery {
+                column-count: 2; /* Number of columns for mobile */
+            }
+        }
 </style>
 </head>
 <body class="w3-black">
@@ -30,54 +51,91 @@
         <div class="back-h1">
           <h1><b>GALERIJA</b></h1>
         </div>
-        
       </div>
     </div>
     <div class="filter-button">
       <button onclick="filter('all')"><b>Sve</b></button>
       <button onclick="filter('photos')"><b>Slike</b></button>
-      <button onclick="filter('videos')"><b>Videi</b></button>
     </div>
 </div>
-  <div class="gallery" style="width: 100%; padding-right: 20px;">
-      <a href="https://live.staticflickr.com/65535/53737556829_3820a0820b_n.jpg" class="picture photo">
-          <img src="https://live.staticflickr.com/65535/53737556829_3820a0820b_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53737418813_b3d00e1f35_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53737418813_b3d00e1f35_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53737224011_0cfcf28c14_n.jpg" class="picture photo">
-          <img src="https://live.staticflickr.com/65535/53737224011_0cfcf28c14_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53736293407_58817ff4ec_n.jpg" class="picture photo">
-          <img src="https://live.staticflickr.com/65535/53736293407_58817ff4ec_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53737643950_498806eaee_n.jpg" class="picture photo">
-          <img src="https://live.staticflickr.com/65535/53737643950_498806eaee_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53737418803_bb22e3ed59_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53737418803_bb22e3ed59_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53737418798_3144f62d5a_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53737418798_3144f62d5a_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53737223941_b2277c2b67_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53737223941_b2277c2b67_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53743429348_0488ac2dd4_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53743429348_0488ac2dd4_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53743569614_af3e2de979_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53743569614_af3e2de979_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53743569619_84b5a19bbb_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53743569619_84b5a19bbb_n.jpg" alt="Avatar">
-      </a>
-      <a href="https://live.staticflickr.com/65535/53743247831_6e0136bd6f_n.jpg" class="picture photo">
-        <img src="https://live.staticflickr.com/65535/53743247831_6e0136bd6f_n.jpg" alt="Avatar">
-      </a>
-    
-  </div>
+<div class="gallery">
+  <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="picture photo">
+      <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53727936049_4176b50610.jpg" class="picture photo">
+      <img src="https://live.staticflickr.com/65535/53727936049_4176b50610.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53727592796_894cea1602_n.jpg" class="picture photo">
+      <img src="https://live.staticflickr.com/65535/53727592796_894cea1602_n.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" class="picture photo">
+      <img src="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53728763840_fd85b6f86b_w.jpg" class="picture photo">
+      <img src="https://live.staticflickr.com/65535/53728763840_fd85b6f86b_w.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53734415844_31d8cc632c_n.jpg" class="picture photo">
+    <img src="https://live.staticflickr.com/65535/53734415844_31d8cc632c_n.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53735281073_9a9eeafc43_w.jpg" class="picture photo">
+    <img src="https://live.staticflickr.com/65535/53735281073_9a9eeafc43_w.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53735410104_c2beeb63d5_w.jpg" class="picture photo">
+    <img src="https://live.staticflickr.com/65535/53735410104_c2beeb63d5_w.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53734470065_5ab63292be_n.jpg" class="picture photo">
+    <img src="https://live.staticflickr.com/65535/53734470065_5ab63292be_n.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53727415352_ebf7590cc8.jpg" class="picture photo">
+    <img src="https://live.staticflickr.com/65535/53727415352_ebf7590cc8.jpg" alt="Avatar">
+  </a>
+  <a href="https://live.staticflickr.com/65535/53738686111_580de65370_n.jpg" class="picture photo">
+      <img src="https://live.staticflickr.com/65535/53738686111_580de65370_n.jpg" alt="Avatar">
+    </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+  });
+  function filter(type) {
+  var galleryItems = document.querySelectorAll('.gallery a');
+
+  galleryItems.forEach(function(item) {
+      if (type === 'all') {
+          item.style.display = 'block';
+      } else if (type === 'photos' && item.classList.contains('photo')) {
+          item.style.display = 'block';
+      } else if (type === 'videos' && item.classList.contains('video')) {
+          item.style.display = 'block';
+      } else {
+          item.style.display = 'none';
+      }
+  });
+  }
+  document.addEventListener("fullscreenchange", function () {
+  var video = document.getElementById("video1");
+  if (!document.fullscreenElement) {
+      video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  }
+});
+
+document.addEventListener("webkitfullscreenchange", function () {
+  var video = document.getElementById("video1");
+  if (!document.webkitIsFullScreen) {
+      video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  }
+});
+
+document.addEventListener("mozfullscreenchange", function () {
+  var video = document.getElementById("video1");
+  if (!document.mozFullScreen) {
+      video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  }
+});
+</script>
+<script src="main.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.js"></script>
   <script src="main.js"></script>

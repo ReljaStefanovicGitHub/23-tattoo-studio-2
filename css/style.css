@@ -60,11 +60,6 @@ input[type=email],[type=text], select, textarea {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #6666FF;
-}
-
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
@@ -87,8 +82,8 @@ input[type=submit]:hover {
   top: 45%;
   max-width: 120%;
   height: auto;
-  margin-bottom: -30px;
-  margin-top: -100px; /* Reduced space between image and line */
+  margin-bottom: 50px;
+  margin-top: -150px; 
 }
 
 .paragraphs-container {
@@ -156,10 +151,7 @@ input[type=submit]:hover {
 .barcode img{
   width: 300px;
   position: absolute;
-  margin-top: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 330px;
 }
 
 
@@ -234,7 +226,7 @@ input[type=submit]:hover {
   .barcode img{
     width: 300px;
     position: absolute;
-    margin-top: 270px;
+    margin-top: 320px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -250,7 +242,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   #home {
     background-image: url(https://live.staticflickr.com/65535/53743973920_8f7ebe2529.jpg);
     width: 100%;
@@ -333,16 +325,17 @@ input[type=submit]:hover {
 .about-page{
   background-image: url(/icons/about.png);
   background-size: cover;
+  position: relative;
   height: 100vh;
 }
 .content-about{
   color: white;
   font-family: 'din alternate';
   width: 50%;
-  float: right;
   text-align: center;
   height: 75%;
   display: flex;
+  position: relative;
   padding-top: 120px;
   justify-content: center;
   flex-direction: column;
@@ -362,28 +355,51 @@ input[type=submit]:hover {
   .about-page{
     background-image: url(/icons/about.png);
     background-size: cover;
-    height: 100vh;
     position: relative;
+    height: 100vh;
+  
   }
   .content-about{
     color: white;
     font-family: 'din alternate';
     width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 75%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
   }
   .about-page img{
-    display: block;
-    top: 20%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 70%;
-    height: auto;
-    position: absolute
+    transform: translateX(-50%);
   }
   .content-about p{
     padding: 10px;
+  }
+}
+
+.contact{
+  background-image: url(/icons/tattoo-contact.jpg);
+  padding-top: 0;
+  margin-top: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media screen and (max-width: 760px) {
+  .contact{
+    background-image: url(/icons/tattoo-contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }
