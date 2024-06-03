@@ -5,12 +5,13 @@ body {
     height: 100vh;
     margin: 0;
     left: 20%;
+    font-family: 'din alternate';
 }
 .navigation {
     position: absolute;
     left: 23%;
-    top: 70%;
-    transform: translateY(-50%);
+    top: 80%;
+    transform: translateY(-50%,-80%);
 }
 .arrow {
     cursor: pointer;
