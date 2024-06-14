@@ -321,75 +321,95 @@ input[type=email],[type=text], select, textarea {
     
   }
 }
+/* General Reset and Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-.about-page{
-  background-image: url(/icons/about.png);
-  background-size: cover;
-  position: relative;
-  height: 100vh;
-}
-.content-about{
-  position: relative;
-  float: right;
-  width: 30%;
-  text-align: center;
+/* Container for the About Section */
+.about-page {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: grid;
-  place-content: center;
-  place-items: center;
-  margin-top: 5%;
-  padding-top: -50px;
-  height: 70%;
-  margin-right: 10%;
+  height: 100vh;
+  padding: 20px;
+  background-image: url(/icons/about.png);
+  background-position: center;
+  background-size: cover;
   font-family: 'din alternate';
+  background-repeat: no-repeat;
 }
-.content-about h2{
-  margin-bottom: 50px;
+
+.content-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
 }
-.content-about p{
+
+/* Image Styling */
+.content-about img {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  align-items: start;
+  margin-top: -300px;
+  height: auto;
+  margin-right: 50px;
+}
+
+/* Text Content Styling */
+.content-about h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  padding-top: -50px;
+  padding-bottom: 50px;
+}
+
+.content-about p {
+  margin: 10px 0 0 0;
   font-size: 20px;
 }
-.about-page img{
-  display: block;
-  top: 45%;
-  max-width: 50%;
-  height: auto;
-  display: inline-block;
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.content-about p{
-  padding: 10px;
-}
-@media screen and (max-width: 760px){
-  .about-page{
-    background-image: url(/icons/about.png);
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-about {
+      flex-direction: column;
+      text-align: center;
   }
-  .content-about{
-    color: white;
-    font-family: 'din alternate';
-    width: 50%;
-    text-align: center;
-    height: 75%;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full height of the viewport */
-    text-align: center;
+
+  .content-about img {
+      margin: 0 0 20px 0;
   }
-  .about-page img{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  .content-about h2{
+     font-size: 30px;
+     margin: 0 0 20px 0;
+     padding: 0;
+     text-align: center;
+     font-weight: 500;
+     letter-spacing: 0px;
+     font-family: 'din alternate';
   }
   .content-about p{
-    padding: 10px;
+    font-size: 1px;
   }
 }
+
 
 .contact{
   background-image: url(/icons/tattoo-contact.jpg);

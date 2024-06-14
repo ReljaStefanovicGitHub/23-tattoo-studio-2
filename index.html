@@ -17,7 +17,7 @@
 <div id="main">
   <header id="home">
     <div class="w3-top w3-center" id="myNavbar" style="position: absolute; text-decoration: none; font-family: sans-serif; margin-right: 10px;">
-      <div class="w3-bar w3-center myNav" style="padding-top: 20px; font-family: 'DIN Alternate'; letter-spacing: 1px;">
+      <div class="w3-bar w3-center myNav" style="padding-top: 20px; font-family: 'din alternate';">
         <a href="#main" class="w3-bar-item" style="width:20%; ">POČETNA</a>
         <a href="#about" class="w3-bar-item" style="width:20%;">O MENI</a>
         <a href="gallery.html" class="w3-bar-item" style="width:20%;">GALERIJA</a>
@@ -44,21 +44,21 @@
 
   <!-- About Section -->
   <div class="about-page" id="about">
-    <img src="/icons/Untitled_Artwork.png">
     <div class="content-about">
-        <h2>ABOUT</h2>
-        <hr style="color: white; width: 120px; margin-top: -40px;">
-        <p>
-          23 Tattoo Studio počeo je sa radom
-          23.3.2021. godine u Novom Sadu.
-          Studio je osnovan sa verovanjem da će ga baš taj datum otvaranja probiti na tattoo nebo, a još kada je i naziv studija upravo taj broj, rekli bismo da je to dobitna kombinacija.
-          Stilovi kojim smo najviše posvećeni
-          jesu MICROREALISM i FINE-LINE.
-        </p>
+        <img src="/icons/Untitled_Artwork.png" alt="Tattoo Studio Logo">
+        <div class="text-content">
+            <h2>ABOUT</h2>
+            <p>
+                23 Tattoo Studio počeo je sa radom
+                23.3.2021. godine u Novom Sadu.
+                Studio je osnovan sa verovanjem da će ga baš taj datum otvaranja probiti na tattoo nebo, a još kada je i naziv studija upravo taj broj, rekli bismo da je to dobitna kombinacija.
+                Stilovi kojim smo najviše posvećeni
+                jesu MICROREALISM i FINE-LINE.
+            </p>
+        </div>
     </div>
-  </div>
+</div>
     
-  
   <div class="contact">
     <h2 class="w3-text-light-grey" style="padding: 1px 20px;">Kontaktiraj me</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -73,10 +73,7 @@
       <input type="text" placeholder="Napisi poruku" id="message" required>
       <button id="sendEmailButton" onclick="sendEmail()">Pošalji email</button>
     </div>
-  <!-- End Contact Section -->
   </div>
-
-<!-- END PAGE CONTENT -->
 </div>
 
 </body>
