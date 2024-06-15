@@ -98,4 +98,4 @@ var video = document.getElementById("video1");
 if (!document.mozFullScreen) {
     video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }
-});
+});  

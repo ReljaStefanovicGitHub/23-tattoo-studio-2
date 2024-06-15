@@ -394,11 +394,11 @@ body, html {
   }
 
   .content-about img {
-      margin: 0 0 20px 0;
+      margin: -200px 0 20px 0;
   }
   .content-about h2{
      font-size: 30px;
-     margin: 0 0 20px 0;
+     margin: 50px 0 20px 0;
      padding: 0;
      text-align: center;
      font-weight: 500;
@@ -406,7 +406,8 @@ body, html {
      font-family: 'din alternate';
   }
   .content-about p{
-    font-size: 1px;
+    font-size: 13px;
+    padding-top: 100px;
   }
 }
 
@@ -423,6 +424,7 @@ body, html {
 }
 .contact h2{
   text-align: center;
+  margin-top: 10px;
   margin-bottom: -10px;
 }
 .contact hr{
