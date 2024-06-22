@@ -31,6 +31,39 @@
       flex: 100%;
       max-width: 100%;
     }
+    .container input[type=email], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+      width: 80%;
+    }
+    .container input[type=text]{
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical ;
+      width: 80%;/* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    .container {
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+    }
   }
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -59,6 +92,7 @@ input[type=text]{
   width: 50%;/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+
 /* Style the submit button with a specific background color etc */
 #sendEmailButton {
   background-color: #009688;
@@ -81,15 +115,16 @@ input[type=text]{
   justify-content: center;
   height: 70vh;
 }
+#home{
+  position: relative;
+}
 .foreground-image {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 100px;
 }
 
 .foreground-image img {
@@ -237,14 +272,6 @@ input[type=text]{
     padding-bottom: 40px;
     position: absolute;
     margin-bottom: -150px;
-  }
-  .barcode img{
-    width: 300px;
-    position: absolute;
-    margin-top: 320px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .par p{
     font-size: 8px;
