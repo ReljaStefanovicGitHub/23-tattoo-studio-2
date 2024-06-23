@@ -232,6 +232,7 @@ input[type=text]{
     height: auto;
     margin-top: -310px;
     position: relative; /* Reduced space between image and line */
+    margin-bottom: -80px;
   }
 
   .paragraphs-container {
