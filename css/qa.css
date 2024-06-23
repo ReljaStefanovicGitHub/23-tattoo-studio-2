@@ -121,7 +121,7 @@ body {
     }
     .qa-h1{
         position: absolute;
-        top: 16%;
+        top: 5%;
         left: 35%;
         font-family: 'din alternate';
         font-size: 60px;
@@ -131,7 +131,7 @@ body {
         color: white;
         width: 110px;
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 35%;
     }
     .back-arrow{
@@ -154,7 +154,7 @@ body {
     }
     .qa-question{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         align-items: center;
@@ -162,6 +162,7 @@ body {
         flex-direction: column;
         text-align: center;
         font-size: 14px;
+        margin-top: -50px;
     }
     .qa-question p{
         padding-top: 50px;
