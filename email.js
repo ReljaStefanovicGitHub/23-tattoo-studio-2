@@ -7,8 +7,7 @@
      const message = document.getElementById('message').value;
      const templateParams = {
          from_email: email,
-         to_email: 'reljastef8@email.com',
-         subject: 'Sending Email using EmailJS',
+         to_email: '23tattostudio23@gmail.com',
          message: message,
      };
 
