@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Webstore</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link href="https://fonts.cdnfonts.com/css/din-alternate" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript" src="email.js"></script>
+<script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="w3-top w3-center" id="myNavbar" style="position: absolute; text-decoration: none; font-family: sans-serif; margin-right: 10px;">
+            <div class="w3-bar w3-center myNav" style="padding-top: 20px; font-family: 'din alternate';">
+              <a href="/pages/index.html/#main" class="w3-bar-item" style="width:20%; ">POČETNA</a>
+              <a href="#about" class="w3-bar-item" style="width:20%;">O MENI</a>
+              <a href="gallery.html" class="w3-bar-item" style="width:20%;">GALERIJA</a>
+              <a href="qa.html" class="w3-bar-item" style="width:20%;">Q&A</a>
+              <a href="#contact" class="w3-bar-item" style="width:20%;">KONTAKT</a>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="product" data-id="1" data-name="Product 1" data-price="10">
+                <h2>Product 1</h2>
+                <p>Price: $10</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Product 2" data-price="20">
+                <h2>Product 2</h2>
+                <p>Price: $20</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Product 3" data-price="30">
+                <h2>Product 3</h2>
+                <p>Price: $30</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4" data-name="Product 4" data-price="40">
+                <h2>Product 4</h2>
+                <p>Price: $40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+    </main>
+
+    <aside id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <button id="close-cart" class="close-cart">X</button>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p id="total-price">Total: $0</p>
+        <button id="checkout">Checkout</button>
+    </aside>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+100px;100px;
